@@ -10,6 +10,7 @@
     <title>Pseudomonas DB</title>
 
     <style>
+        
         body{
             background-color: #18181b;
             color: #fbfbfbda;
@@ -17,9 +18,20 @@
             /* pink == #EA99A2 */
         }
 
+        .wrapper{ /* Just so the custom cursor get the whole page */
+            background-color: #18181b;
+            height:100vh;
+        }
+
+        body:hover{
+            cursor: url("custom_cursor.cur"), pointer;
+        }
+
         h1{
             color: #EA99A2;
         }
+
+        
 
         nav li{
             list-style: none;
@@ -61,8 +73,7 @@
 <body>
 
             
-        
-
+    <div class="wrapper">
     <nav>
         
         <ul>
@@ -91,6 +102,8 @@
         // window.prompt("Qual seu nome?");
     </script>
 
+
+    </div>
 </body>
 
 </html>
