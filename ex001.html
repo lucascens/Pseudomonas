@@ -21,10 +21,16 @@
             color: #EA99A2;
         }
 
+        nav li{
+            list-style: none;
+            float: left;
+        }
+
         nav a{
-           text-decoration: none;
-            width: 10%;
+            text-decoration: none;
+            width: 100% !important;
             height: 1.2em;
+            margin-right: 50px;
             display: inline-block;
             border: 2px solid #ba3544;
             text-align: center;
@@ -33,10 +39,10 @@
             font-weight: 700; 
             transition: 250ms ease-in-out;
             
-            
         }
 
         nav a:hover{
+            
             text-decoration: none;
             display: inline-block;
             color: #fbfbfbda;
@@ -58,11 +64,24 @@
         
 
     <nav>
-        <img src="bunny.png" style="height: 50px; width: 50px;">
-        <a style="background-color:#ba3544; color:#EA99A2; border: 2px solid #EA99A2; font-weight: 700;">Home</a>
-        <a href="/browse" >Browse</a>
-        <a href="/contact" >Contact</a>
+        
+        <ul>
+            <li>
+                <img src="bunny.png" style="height: 50px; width: 50px;">
+            </li>
+            <li>
+                <a style="background-color:#ba3544; color:#EA99A2; border: 2px solid #EA99A2; font-weight: 700;">Home</a>
+            </li>
+            <li>
+                <a href="/browse" >Browse</a> 
+            </li>
+            <li>
+                <a href="/contact" >Contact</a>
+            </li>
+        </ul>
     </nav>
+
+    <br>
 
     <h1> Pseudomonas DB</h1>
     <p>An on-line source for anyone who wishes to know in detail the structural proteome of <i>Pseudomonas aeruginosa</i>.</p>
